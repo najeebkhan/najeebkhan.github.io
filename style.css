@@ -1,0 +1,78 @@
+body {
+background-color:  #EEE;
+}
+
+#container {
+	background-color: white;
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#header {
+	background-color: #66CCFF;
+	color: white;
+	text-align: center;
+}
+
+#content {
+	padding: 10px;
+}
+
+#profilePic {
+	width: 180px;
+	float: left;
+}
+
+#nav img {
+  float: left;
+  width:150px;
+  padding: 10px;
+  border-radius: 130px;
+  /* border:3px solid #66CCFF;*/
+/*margin: 0 0 1em 1em;*/
+}
+
+
+#nav {
+	width: 180px;
+	float: left;
+}
+
+#nav ul {
+	list-style-type: none;
+	padding-left: 10;
+}
+
+#nav ul a {
+	text-decoration: none;
+	color: red;
+}
+a {
+	text-decoration: none;
+}
+
+#blogposts a {
+	text-decoration: none;
+}
+#blogposts li {
+	list-style-type: none;
+    margin-bottom: 5px;
+   }
+
+#nav .selected {
+	font-weight: bold;
+}
+
+#main {
+	width:600px;
+	float: right;
+}
+#pp {
+	float: left;
+	padding-top: 20px;
+}
+#footer{
+	clear: both;
+}
+
