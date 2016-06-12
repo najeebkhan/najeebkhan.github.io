@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Arbutus+Slab" rel="stylesheet" type="text/css">
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-72750493-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+<script type="text/x-mathjax-config">
+            // <![CDATA[
+            MathJax.Hub.Config({ 
+                TeX: {extensions: ["AMSmath.js", "AMSsymbols.js"]},     
+                extensions: ["tex2jax.js"],
+                jax: ["input/TeX", "output/HTML-CSS"],
+                showProcessingMessages : false,
+                messageStyle : "none" ,    
+                showMathMenu: false ,
+                tex2jax: {
+                    processEnvironments: true,
+                    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                    displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+                    preview : "none",
+                    processEscapes: true
+                },
+                "HTML-CSS": { linebreaks: { automatic:true, width: "latex-container"} }
+            });
+            // ]]>
+        </script>
+
+        <!-- math -->
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<link rel="stylesheet" href="latex2html5.min.css"> 
+<script type="text/javascript" src="..//scripts//latex2html5.min.js"></script>
+
+  <title>On differential equations</title>
+  <link rel="stylesheet" type="text/css" href="..//style.css" />
+</head>
+<body>
+<div id="container">
+<div id="header">
+<h1>On differential equations</h1>
+</div>
+<div id="content">
+
+
+<div id="nav">
+	<img src="..//images//najeeb.jpg" width="130px"  >
+	<ul>
+		<li><a href="..//index.html" >Home</a></li>
+		<li><a href="..//research.html" >Research</a></li>
+		<li><a class="selected" href="..//blogposts.html" >Blog Posts</a></li>
+		<li><a  href="..//contact.html" >Contact</a></li>
+	</ul>
+</div>
+<div id="main">
+<p align="justify">
+Understanding differential equations is a tall order if you are new to mathematics. We will start simple. We will start with the familiar concepts of mathematical expressions, describe what a mathematical equation is, then we will proceed to define a mathematical function and the concept of derivative of a function. At this point we will think about some toy problems that may arise in the real world and finally see how that leads to the definition of differential equations. Without further ado let us dive into the world of mathematics.
+</p>
+<h2>
+What is an equation?
+</h2>
+<p align="justify">
+A sentence in the English language comprises a subject noun, a verb and an object noun, for example, "John plays piano," is a valid sentence with 'John' and 'piano' the nouns and 'plays' the verb. 
+By analogy in mathematics an expression comprise of values (the nouns) and an operator such as plus, minus, multiply or divide (the verb), for example, $2 + 3$ is a valid mathematical expression and so are $10/5$ and $30-4$. 
+</p>
+<p align="justify">
+We don't always need to specify the exact names of the nouns in an English sentence, we can use pronouns instead of nouns and so "He plays this," is equivalent to "John plays piano." In this sentence he and him are pronouns, placeholders for the most recent nouns that both the speaker/writer and listner/reader know about.  In mathematical expressions the equaivalent concept is called a variable represented with a symbol such as $x$, $y$, $z$ or any other alphabet. A variable $x$ may refer to the number $2$ at one moment and the same $x$ may refer to the value $5$ at a later point, that is why it is called a variable. So assuming that the variable $x$ refers to the value $2$ and variable $y$ refers to $3$, the mathematical statement $2 + 3$ can be equivalently be written as $x + y$.
+</p>
+<p align="justify">
+Now that we know mathematical expressions, let's define a mathematical equation. Oxford dictionary defines an equation as:
+<blockquote>
+A statement that the values of two mathematical expressions are equal (indicated by the sign =).
+</blockquote>
+</p>
+<p align="justify">
+In other words a mathematical equation is a fact, a statement, a preposition that two entities are equal. 
+So $2+4=6$, $4/2=2$, and $6-4=2$ are all mathematical equations. Now let's use variables (pronouns). Let $x$, $y$ and $z$ refer to $2$, $3$ and $5$ respectively and these facts are represented by the mathematical equation $x=2$, $y=4$ and $z=6$. Next, our first mathematical equation $2+4=6$ becomes $x+y=z$, and so on... 
+
+</p>
+<p align="justify">
+In real world we use variables to represent different quantities. As an example, let $m$ represent the amount of money you save per month, $e$ represent your monthly expenditure and $s$ represent your monthly salary, then the fact that your saving is equal to your salary minus your expenditure is represented by the mathematical equation
+$m=s-e$
+</p>
+<h2>
+What does solving an equation means?
+</h2>
+<p align="justify">
+Solving an equation means finding out the value of an unknown variable given some mathematical statements i.e., equations. 
+Let's say we know your salary is \$$3000$ and you have a saving of \$$1000$, then the equation is 
+$1000=3000-e$; 
+solving this equation for $e$ means finding the value of $e$: the monthly expenditure. In this case it is very easy to solve the equation and find out the expenditure $e$ to be \$$2000$. Solving equations: finding the unknown quantities based on all the existing facts, i.e., the given equations, is an important part of real world engineering problems.
+</p>
+<h2>
+What is a function?
+</h2>
+<p align="justify">
+ Functions are a type of relations between quantities. So, let's start with a mathematical relation between two quantities. Let the first quantity, represented by $x$, be the number of apples you buy  and the second quantity, represented by $y$, be the amount you pay at a store, then the following figures illustrate some of the relations between these two quantities.
+ 
+ 
+ It may be the case that the more apples you get the more you pay: <br><br>
+<img src="..//images//one2one.svg" alt="Number of apples
+" style="width:400px;height:400px;" class="center" >
+<br><br>
+Or there may be a "buy one, get one free" sale:
+<br><br>
+<img src="..//images//buy1get1free.svg" alt="there can also be a minimum charge for each dozen of apples
+" style="width:400px;height:400px;" class="center">
+<br><br>
+Or the price may depend on the mood of the seller:
+ <br><br>
+<img src="..//images//moodyprice.svg" alt="There can also be a buy one get one free relation.
+" style="width:400px;height:400px;" class="center">
+<br><br>
+</p>
+<p align="justify">
+ Functions are relations between an input quantity and an output quantity, such that each input is related to exactly one output. The first two relations above are functions; however, the third one is not a function since two apples ($x=2$) are related to both $5$ and $10$. 
+ Functions are represnted by equaions of the form $y=f(x)$ where $x$ is assumed to be the input quantity and $y$ the output quantity. So an equation $y=2x+3$ represent a function. Not all equaions, however, represent a function, for example, $y=\pm\sqrt{x}$ do not represent $y$ as a function of $x$ since it relates each $x$ to two $y$s.
+</p>
+
+<h2>What is a derivative?</h2>
+<p align="justify">
+A derivative is the rate of change of one quantity in terms of another quantity. Roughly speaking, if you are climbing a hill and you climb 10 meters height in one hour, the derivative of your height with respect to time is 10 meters per hour. Derivatives measure the sensitivity, i.e., how much sensitive is your progress as you advance in time.  
+
+</p>
+<p align="justify">
+
+Let's suppose two quantities $x$ and $y$ are related to each other by a function $y=f(x)$. The derivative of the function $y=f(x)$ is a measure of how much the value of the function $y$ changes when we change the input $x$ to the function $\frac{\textrm{change in } y}{\textrm{change in } x}$. To be precise, derivative measure the instantanuous rate of change, thus the change in $x$ is assumed infinitesimal. 
+
+</p>
+<p align="justify">
+
+
+The figure below shows a plot of the function $f(x)=x^2-3$ along with it's derivative $f'(x)=2x$. For $-3\lt x \lt 0$, $f(x)$ is continuously decreasing and thus the derivative of the function is negative in this range. For $0 \lt x \lt 3$, $f(x)$ is continously increasing and thus the derivative of the function is positive and represents the amount of increase in $f(x)$. 
+
+</p>
+<img src="..//images//derivative.svg" alt="graph of the function.
+" style="width:400px;height:400px;" class="center">
+<br><br>
+<p align="justify">
+
+One final note on the notation used for derivatives. In the example above the function $f(x)$ is a scalar function of a single variable and we denote the derivative of $f(x)$ with resepect to $x$ as
+
+$$
+f'(x) = \frac{df(x)}{dx}. 
+$$
+
+The derivative of a function is also a function and thus we can apply the derivative operation to get higher order derivatives. The concept of derivatives is also defined for more complex functions, i.e., vector valued functions of multiple variables. To learn more about these derivatives see <a href=./VecCal.html>Gradient, Jacobian, Hessian, Laplacian and all that</a>
+</p>
+<h2>
+Finally, what is a differential equation?
+</h2>
+<p align="justify">
+An equation that contains a derivative is called a differential equation. A differential equation relates a quantity to the derivatives of other quantities. Many important laws of physics that govern our universe are in the form of differential equations, e.g., the Newton's law of motion relates the second derivative of position to force $F=m\frac{d^2x}{dt^2}$.
+</p>
+<p align="justify">
+In science we perform experiments, we observe some phenomenon and then fit a mathematical equation to the observations, called a mathematical model. The mathematical model help us in prediction and analysis of the real world phenomenon. Most often differential equations (equations containing derivatives) turns out to be the models describing the observations. Phenomenon such as motion of bodies (Newton's laws), heat transfer (Fourier's law), propagation of radio waves (Maxwell's law), population dynamics (Lotka-Volterra equations), stock market dynamics (Black-Scholes model) are all explained by some form of differential equations.
+
+</p>
+<p align="justify">
+Let us say we want to predict the loin population $P(t)$ in a given area at a given time $t$. After careful observations and using our intuition we came up with a very simple model.We propose that the change in the lion population is proportional to the current population of the lion, i.e, 
+
+$$\frac{dP(t)}{dt}=kP(t).$$
+
+Where $k$ is a proportionality constant to be determined through observations and we assume that once $k$ is determined it remains constant for all times. This is a very simple and quite naive  differential equation for the dynamics, i.e, growth and decay, of the lion population, as the population depends on many more factors than just the current number of lions alive and also the assumption that the reproduction rate $k$ remains constant for all times is also a simplistic one. Nevertheless, this model will help us in understanding differential equations.
+</p>
+
+<h2>
+What does solving a differential equation means?
+</h2>
+<p align="justify">
+Our population model tells us how the derivative of the population $\frac{dP(t)}{dt}$ changes with the current population size; however, it does not give us the population $P(t)$ at any given time. Solving a differential means finding a function $P(t)$ such that its derivative is given by $kP(t).$ To graphically visualize the solution to the differential equation consider points in the $t$-$P(t)$ solution plane.
+<br><br>
+<img src="..//images//gridPoints.svg" alt="Gridpoints in the solution plane.
+" style="width:600px;" class="center">
+<br><br>
+The first derivative of a curve gives us the slope of the curve and since the differential equation gives us the first derivative of the solution $P(t)$, we can draw the slope lines to the solution curve at points in the solution space as shown below. At each point a slope of $\frac{dP(t)}{dt}=0$ is drawn as a horizontal line, $\frac{dP(t)}{dt}=\pm1$ are drawn as diagonal lines, and a slope of $\inf$ is drawn as a vertical line and so on... 
+<br><br>
+<img src="..//images//slopeField.svg" alt="Slope field.
+" style="width:600px;" class="center">
+<br><br>
+ Our solution to the differential equation must satisfy these slopes, i.e., at each point in the solution space the red slope lines must be tangent to the solution curve. It turns out that there are many functions that satisfy this requirement.
+</p>
+<p align="justify">
+ In order to choose a specific function as a solution we need to impose further restrictions on the solution function $P(t)$ such as the solution must take a certain value $P(t)=P_0$ at $t=0$. This restriction on the solution function is known as an <i>initial-value problem</i>. The figure below shows the solution curves for different initial values of the function $P(t).$
+<br><br>
+<img src="..//images//solutionCurves.gif" alt="Slope field.
+" style="width:600px;" class="center">
+<br><br>
+
+
+<p align="justify">
+I hope you enjoyed reading. Your feedback on this article will be highly appreciated.
+</p>
+
+</div>
+<div id="footer">
+	Copyright &copy; 2016 Najeeb Khan
+</div>
+</div>
+</body>
+</html>
